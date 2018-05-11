@@ -1,0 +1,142 @@
+body {
+	font-size: 30px;
+}
+
+.project {
+	display: flex;
+	flex-direction:  column;
+	align-items: center;
+	
+	margin-top: 50px;
+}
+
+.square__wrapper {
+	width: 300px;
+	height: 300px;
+	
+	border: 3px solid black;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.button {
+	position: absolute;
+	top: 170px;
+
+	width: 150px;
+	height: 75px;
+	
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: black;
+	color: white;
+	
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: grey;
+}
+
+/*стили для активных кубов с цветами*/
+.square-on {
+	width: 100px;
+	height: 100px;
+
+	border: 1px solid black;
+	box-sizing: border-box;
+
+	cursor: pointer;
+	
+}
+
+.square-on:hover, .square-on:active {
+	opacity: 0.2;
+}
+
+/*стили для пасивных кубов с цветами*/
+.square-off {
+	width: 100px;
+	height: 100px;
+
+	box-sizing: border-box;
+	
+	opacity: 0;
+	transition: 2s;
+	
+	cursor: pointer;
+}
+
+.square__border {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.square__border:hover, .square__border:active {
+	background-color: black;
+	opacity: 0.5;
+}
+
+.attempts-title {
+	position: absolute;
+	top: 40px;
+	left: 62%;
+}
+
+.attempts {
+	position: absolute;
+	top: 40px;
+	left: 71%;
+}
+/*Стили для таймера*/
+
+.timer {
+	width: 50px;
+	height: 35px;
+
+	font-size: 30px;
+}
+
+.name-timer {
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+
+	font-size: 30px;
+}
+
+
+/* Стили для меню новой игры*/
+
+.wrapper-game {
+	position: absolute;
+	top: 130px;	
+
+	background-color: white;
+	border: 1px solid black;
+}
+
+.button-yes, .button-no {
+	width: 100px;
+	height: 50px;
+	
+	margin: 0 auto 10px 33px;
+	background-color: black;
+	color: white;
+
+	border: none;
+	cursor: pointer;
+	outline: none;
+	
+	font-size: 20px;
+	border-radius: 5px;
+}
+.button-yes:hover, .button-no:hover {
+	background-color: grey;
+
+	color: black;
+}
